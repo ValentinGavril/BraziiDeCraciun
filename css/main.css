@@ -1,0 +1,209 @@
+:root {
+  --text-primary: #224210;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --text-grey: #8e8e8e;
+  --text-light: #eaeaea;
+  --text-white: #ffffff;
+
+  --bg-primary: #0ea101;
+  --bg-secondary: #dfedf5;
+  --bg-dark: #101d42;
+  --bg-light: #ffffff;
+
+  --border-color: #ddd;
+
+  --button-color: #2bb686;
+
+  --fs-large: 1rem;         /* 16px */
+  --fs-medium: 0.875rem;    /* 14px */
+  --fs-small: 0.75rem;      /* 12px */
+
+  --spacing-xl: 2.625rem;   /* 42px */
+  --spacing-large: 1.75rem; /* 28px */
+  --spacing-medium: 1rem;   /* 16px */
+  --spacing-small: 0.5rem;  /* 8px */
+  --spacing-tiny: 0.25rem;  /* 4px */
+  --spacing-extra-tiny: 0.125rem;  /* 2px */
+
+  --z-index-nav: 2;
+  --z-index-dropdown: 3;
+
+  --mobile-logo-height: 40px;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+}
+
+/* Font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Adaugam proprietati legate de culori */
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #224210;
+}
+
+h3 {
+  color:#fbb44c;
+}
+
+p {
+  color: #000;
+}
+
+/* Common style */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 250px;
+  margin: auto;
+  padding: 16px;
+}
+
+
+
+
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0ea101;
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu-icon {
+  color: white;
+  display: none;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul a {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  padding: 16px;
+}
+
+nav ul a:hover {
+  color: #fbb44c;
+}
+
+img{
+  background-color:#0ea101 ;
+  width: 100%
+
+}
+@media screen and (max-width: 768px) {
+  .menu-icon-container ul {
+    display: none;
+  }
+
+  .menu-icon-container {
+    position: relative;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav input[type="checkbox"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+  }
+
+  nav input[type="checkbox"]:checked ~ ul {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: calc(40px + (2 * 16px));
+    left: 0;
+    background-color: #000;
+  }
+}
+
+footer {
+  
+  background-color: #000;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  padding: 16px 0;
+}

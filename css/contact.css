@@ -1,0 +1,81 @@
+.welcome {
+  height: 50vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2,
+.contact .container > p,
+.contact .contact-wrapper {
+  margin-bottom: var(--spacing-large);
+}
+
+.contact h2 {
+  text-align: center;
+  padding-top: var(--spacing-large);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-wrapper ul,
+.contact-wrapper form {
+  width: 50%;
+  padding: var(--spacing-medium);
+}
+
+.contact-wrapper li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-wrapper .material-icons {
+  vertical-align: middle;
+}
+
+.contact a,
+.contact .description {
+  color: var(--text-grey);
+}
+
+.contact a:hover {
+  color: var(--text-primary);
+}
+
+.contact .contact-wrapper p,
+.contact a,
+.contact label {
+  font-size: var(--fs-medium);
+}
+
+.contact label {
+  margin-bottom: var(--spacing-tiny);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: var(--spacing-medium);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-small);
+  border-radius: 3px;
+}
+
+.contact-submit {
+  padding: var(--spacing-small);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  color: var(--text-white);
+  width: 100px;
+  text-align: center;
+  font-size: var(--fs-medium);
+}
